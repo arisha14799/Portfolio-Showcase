@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arisha Bano | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Arisha Bano</div>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Arisha Bano</span></h1>
+            <p>Aspiring Web Developer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am a web developer passionate about building responsive and user-friendly websites. I specialize in <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio website showcasing my web development skills using HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Weather App</h3>
+                    <p>A weather forecast app that fetches real-time weather data using OpenWeather API and displays it in a user-friendly interface.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>E-commerce Store</h3>
+                    <p>An online e-commerce store built with React and Firebase for managing products, users, and real-time orders.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Blogging Platform</h3>
+                    <p>A full-stack blogging platform created with Node.js, Express, and MongoDB, allowing users to create and share blog posts.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>To-Do List App</h3>
+                    <p>A simple to-do list app using vanilla JavaScript that allows users to add, delete, and mark tasks as completed.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Fitness Tracker</h3>
+                    <p>A mobile-responsive fitness tracker built with React and Node.js, helping users log their workouts and track progress over time.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Recipe Finder</h3>
+                    <p>A recipe search app using the Edamam API, allowing users to find healthy recipes based on ingredients and dietary preferences.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Chat Application</h3>
+                    <p>A real-time chat application built using Socket.io and Node.js, supporting multiple rooms and real-time messaging.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to get in touch via email at <a href="mailto:arisha.14799@zu.edu.pk">arisha.14799@zu.edu.pk</a>.</p>
+        <div class="social-media">
+            <a href="#"><img src="icons/github.png" alt="GitHub"></a>
+            <a href="#"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="icons/twitter.png" alt="Twitter"></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Arisha Bano. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const links = document.querySelectorAll('nav ul li a');
+        for (const link of links) {
+            link.addEventListener('click', smoothScroll);
+        }
+
+        function smoothScroll(e) {
+            e.preventDefault();
+            const href = this.getAttribute('href');
+            document.querySelector(href).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
